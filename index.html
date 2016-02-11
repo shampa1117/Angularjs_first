@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example of angularjs</title>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.js"></script>
+  <script src="script.js"></script>
+  
+
+  <script type="text/javascript">
+    angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+  </script>
+</head>
+<body ng-app="ngRouteExample">
+  <div ng-controller="MainController">
+  
+  <a href="Book/shampa123/no">Home</a> |
+  <a href="Book/shampa43165/ebnon">Resume</a> |
+  <a href="Book/shampayygfiul/hbi">Portfolio</a> |
+  <a href="Book/shampahh/biijbijn">Contact</a> |
+  
+
+  <div ng-view></div>
+
+  <hr />
+
+ HI this is angularjs
+</div>
+</body>
+</html>
+
